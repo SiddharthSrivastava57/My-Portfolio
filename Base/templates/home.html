@@ -1,0 +1,223 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-phone"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Siddharth Srivastava</h1>
+                <h4 class="poppinss">Software Engineer</h4>
+                <a href="{% static 'pdf/resume.pdf' %}" target="_blank">
+                    <button class="btn poppins">Resume</button>
+                </a>
+                <a class="btn live poppins" id="hireme" href="" target="_blank">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle">
+                <img src="{% static 'images/mypic.png'%}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around">
+            <div class="about-left flex s-center items-center">
+                <img src="{%static 'images/dog.png'%}" alt="" style="width: 60%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Siddharth Srivastava</h1>
+                    <p class="t-white poppins">
+                        My name is Siddharth Srivastava. I'm a B.Tech student at SVNIT Surat with an academic background in Civil Engineering, currently transitioning into the software field through consistent hands-on work and self-driven learning. I've chosen this path deliberately, focusing on building real-world projects rather than relying only on theory.
+                    </p>
+                    <p class="t-white poppins">
+                        As a fresher, I'm motivated by solving practical problems and creating clean, reliable software that actually works in real use cases. I enjoy exploring new technologies, improving my technical depth, and understanding how systems function end to end—from logic and data to user experience.
+                    </p>
+                    <a class="btn" id="hireme" href="">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="skills-container flex s-center">
+            <div class="skill-item">
+                <i class="fa-brands fa-python"></i>
+                <span class="t-white poppins">Python</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-html5"></i>
+                <span class="t-white poppins">HTML</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span class="t-white poppins">CSS</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-js"></i>
+                <span class="t-white poppins">JavaScript</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-python"></i>
+                <span class="t-white poppins">Django</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-database"></i>
+                <span class="t-white poppins">MySQL</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span class="t-white poppins">Tailwind CSS</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-git-alt"></i>
+                <span class="t-white poppins">Git</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-github"></i>
+                <span class="t-white poppins">GitHub</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-python"></i>
+                <span class="t-white poppins">Pandas</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-python"></i>
+                <span class="t-white poppins">NumPy</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span class="t-white poppins">Matplotlib</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-file-excel"></i>
+                <span class="t-white poppins">Excel</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-chart-bar"></i>
+                <span class="t-white poppins">Tableau</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-code"></i>
+                <span class="t-white poppins">VS Code</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-python"></i>
+                <span class="t-white poppins">Jupyter</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="Projects">
+        <h1 class="t-center my-2 t-white f-2">Projects</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+                <h1 class="t-white poppins">MiniMart</h1>
+                <p class="t-white poppins">MiniMart is a Django-based e-commerce platform with product catalog, user authentication, and wishlist functionality. Built using HTMX for dynamic interactions and responsive design, it demonstrates modern web development practices with database seeding and admin interface.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/SiddharthSrivastava57/MiniMart-E-Commerce-Website" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                    <a href="" target="_blank" class="btn m-top live">Live Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <h1 class="t-white poppins">UPI Transactions Analysis</h1>
+                <p class="t-white poppins">A comprehensive data analysis project exploring patterns in over 250,000 UPI transactions. The project involves SQL for querying and segmentation, Python (Pandas) for data cleansing and exploratory analysis, and an interactive Tableau dashboard to visualize user spending behavior and merchant fraud risk.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/SiddharthSrivastava57/UPI-Transactions-Trends-Analysis" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                    <a href="" target="_blank" class="btn m-top live">Live Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <h1 class="t-white poppins">Bike Share Usage Analysis</h1>
+                <p class="t-white poppins">An analysis of bike share usage patterns using Python and Pandas, visualized through Matplotlib and Seaborn. The project explores user demographics, trip duration, and station popularity to provide insights into urban mobility trends.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/SiddharthSrivastava57/Bike-Share-Usage-Analysis" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                    <a href="#" target="_blank" class="btn m-top live">Live Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post"> 
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="poppins" placeholder="Enter Your Email" required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class="poppins" placeholder="Enter Your Phone" required>
+                    </div>
+                    
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="poppins" placeholder="Enter Messages"></textarea>
+                    </div>
+                    <div class="send-btn-center">
+                        <button type="submit" class="btn poppins" id="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 font-awesome">
+            <a href="https://www.linkedin.com/in/siddharth-srivastava-774a3b259/" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/SiddharthSrivastava57" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="https://www.instagram.com/sidd_573?igsh=c204cG8xc3NtdW52" target="_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+        </ul>
+        <p class="t-center my-2 poppins">&copy; 2026 Siddharth Srivastava. All Rights Reserved</p>
+    </footer>
+     
+</body> 
+</html>
